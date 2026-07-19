@@ -140,6 +140,52 @@ body {
     color: var(--text-light);
 }
 
+/* Education Layout Styles */
+.education-timeline {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.education-card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(255, 141, 161, 0.05);
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-left: 4px solid var(--primary-color); /* Elegant distinction line */
+}
+
+.education-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(255, 141, 161, 0.12);
+}
+
+.education-date {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.education-degree {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.education-school {
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.education-desc {
+    color: var(--text-light);
+    margin-bottom: 0 !important;
+    font-size: 0.95rem;
+}
+
 /* Projects Grid */
 .projects-grid {
     display: grid;
