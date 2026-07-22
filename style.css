@@ -1,7 +1,7 @@
 /* Global Reset & Variables */
 :root {
     --primary-color: #ff8da1; /* Soft Rose Pink */
-    --primary-hover: #f0758b; /* Deep Rose Pink for hovers */
+    --primary-hover: c; /* Deep Rose Pink for hovers */
     --text-dark: #2d1e21;     /* Soft Warm Espresso */
     --text-light: #7c6468;    /* Muted Rose-Grey */
     --bg-light: #fff5f6;      /* Creamy Pastel Pink-White */
@@ -129,7 +129,6 @@ body:has(.mouse-glow.is-active)::before {
     pointer-events: none;
     transition: left 0.25s ease-out, top 0.25s ease-out;
 }
-
 .filter-container {
   display: flex;
   justify-content: center;
@@ -139,22 +138,30 @@ body:has(.mouse-glow.is-active)::before {
 }
 
 .filter-btn {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(168, 85, 247, 0.2);
-  color: #d1d5db;
+  /* Soft, subtle background for unselected buttons */
+  background: #ffe6eb;
+  border: 1px solid #ffccd5;
+  color: #ff5c7c;
   padding: 10px 22px;
   border-radius: 999px; /* Pill shape */
   font-size: 0.95rem;
+  font-weight: 500;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
-.filter-btn:hover,
-.filter-btn.active {
-  background: #a855f7;
+.filter-btn:hover {
+  background: #ffb6c1;
   color: #ffffff;
-  border-color: #a855f7;
-  box-shadow: 0 0 15px rgba(168, 85, 247, 0.5);
+  border-color: #ff8da1;
+}
+
+.filter-btn.active {
+  /* Solid accent color for the active button */
+  background: #ff8da1;
+  color: #ffffff;
+  border-color: #ff758f;
+  box-shadow: 0 4px 12px rgba(255, 141, 161, 0.4);
 }
 
 .hero-content {
