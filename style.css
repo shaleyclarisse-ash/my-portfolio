@@ -164,6 +164,11 @@ body:has(.mouse-glow.is-active)::before {
   box-shadow: 0 4px 12px rgba(255, 141, 161, 0.4);
 }
 
+.devicon-vercel-original,
+.devicon-vercel-original::before {
+    color: #f6f4f4 !important;
+}
+
 .hero-content {
     position: relative;
     z-index: 1;
